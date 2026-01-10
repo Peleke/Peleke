@@ -15,7 +15,7 @@ RAG pipelines. Agent orchestration. Production inference. The infrastructure you
 | **[LinWheel](https://linwheel.io)** | Multi-agent content pipeline | 90+ posts in 60 seconds. Six agents. Production-reliable orchestration. |
 | **[Interlinear](https://interlinear.peleke.me)** | AI tutor with error classification | Distinguishes typos from conceptual gaps—evaluation harness patterns for education |
 | **[MindMirror](https://swae.peleke.me)** | Hybrid RAG + personal knowledge engine | Privacy-first personalization without shipping data to OpenAI |
-| **[LangLine](https://landline-landing.vercel.app)** | Mobile-first persistent AI sessions | Graph memory that compounds across sessions. Context that doesn't evaporate. |
+| **[LangLine](https://langline.dev)** | Mobile-first persistent AI sessions | Graph memory that compounds across sessions. Context that doesn't evaporate. |
 
 ---
 
