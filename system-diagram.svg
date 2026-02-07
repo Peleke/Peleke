@@ -1,0 +1,121 @@
+<svg viewBox="0 0 600 520" xmlns="http://www.w3.org/2000/svg" aria-label="Agent learning system architecture">
+  <style>
+    .node-bg { fill: #1a1a2e; stroke: #2a2a4a; stroke-width: 1.5; rx: 8; }
+    .node-active { fill: #1a1a2e; stroke: #6c63ff; stroke-width: 2; }
+    .label-sm { font-family: ui-monospace, monospace; font-size: 9px; fill: #666; text-transform: uppercase; letter-spacing: 1.5px; }
+    .label-main { font-family: -apple-system, sans-serif; font-size: 14px; fill: #e0e0e0; font-weight: 500; }
+    .label-sub { font-family: ui-monospace, monospace; font-size: 9px; fill: #888; }
+    .label-accent { font-family: ui-monospace, monospace; font-size: 8px; fill: #6c63ff; opacity: 0.7; }
+    .flow { stroke: #6c63ff; stroke-width: 1.5; stroke-dasharray: 4 3; opacity: 0.5; }
+    .flow-label { font-family: ui-monospace, monospace; font-size: 7px; fill: #666; opacity: 0.6; }
+    .grid-line { stroke: #2a2a4a; stroke-width: 0.5; opacity: 0.2; }
+    .feedback { stroke: #6c63ff; stroke-width: 1.5; stroke-dasharray: 4 3; opacity: 0.5; }
+  </style>
+
+  <!-- Background -->
+  <rect width="600" height="520" fill="#0d0d1a" rx="8"/>
+  <pattern id="g" width="26" height="26" patternUnits="userSpaceOnUse">
+    <path d="M 26 0 L 0 0 0 26" fill="none" class="grid-line"/>
+  </pattern>
+  <rect width="600" height="520" fill="url(#g)"/>
+
+  <!-- Layer 1: Knowledge -->
+  <rect x="170" y="20" width="260" height="60" class="node-bg"/>
+  <text x="210" y="42" class="label-sm">01 · KNOWLEDGE</text>
+  <text x="210" y="60" class="label-main">qortex</text>
+  <text x="210" y="74" class="label-sub">knowledge graphs · rule projection</text>
+  <!-- KG icon -->
+  <circle cx="192" cy="50" r="10" fill="none" stroke="#6c63ff" stroke-width="1" opacity="0.6"/>
+  <circle cx="188" cy="46" r="2" fill="#6c63ff" opacity="0.8"/>
+  <circle cx="196" cy="46" r="2" fill="#6c63ff" opacity="0.8"/>
+  <circle cx="192" cy="54" r="2" fill="#6c63ff" opacity="0.8"/>
+  <line x1="188" y1="46" x2="196" y2="46" stroke="#6c63ff" stroke-width="0.7" opacity="0.5"/>
+  <line x1="188" y1="46" x2="192" y2="54" stroke="#6c63ff" stroke-width="0.7" opacity="0.5"/>
+  <line x1="196" y1="46" x2="192" y2="54" stroke="#6c63ff" stroke-width="0.7" opacity="0.5"/>
+
+  <!-- Flow -->
+  <line x1="300" y1="80" x2="300" y2="120" class="flow">
+    <animate attributeName="stroke-dashoffset" from="0" to="-14" dur="2s" repeatCount="indefinite"/>
+  </line>
+  <text x="310" y="105" class="flow-label">project rules</text>
+
+  <!-- Layer 2: Learning (active/core) -->
+  <rect x="170" y="120" width="260" height="60" class="node-active"/>
+  <text x="210" y="139" class="label-sm" fill="#6c63ff">02 · LEARNING</text>
+  <text x="210" y="157" class="label-main">Thompson Sampling</text>
+  <text x="210" y="172" class="label-sub">buildlog / openclaw</text>
+  <!-- Beta distribution icon -->
+  <path d="M 182 152 Q 186 137, 192 145 Q 198 155, 202 152" fill="none" stroke="#6c63ff" stroke-width="1.5" opacity="0.8"/>
+  <!-- Pulse ring -->
+  <rect x="170" y="120" width="260" height="60" rx="8" fill="none" stroke="#6c63ff" stroke-width="0.5" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Side: Measurement output -->
+  <line x1="430" y1="150" x2="540" y2="150" stroke="#6c63ff" stroke-width="1" stroke-dasharray="3 3" opacity="0.4"/>
+  <text x="545" y="143" class="label-accent">RMR</text>
+  <text x="545" y="153" class="label-accent">tokens</text>
+  <text x="545" y="163" class="label-accent">convergence</text>
+
+  <!-- Flow -->
+  <line x1="300" y1="180" x2="300" y2="220" class="flow">
+    <animate attributeName="stroke-dashoffset" from="0" to="-14" dur="2s" repeatCount="indefinite"/>
+  </line>
+  <text x="310" y="205" class="flow-label">selects signals</text>
+
+  <!-- Layer 3: Nervous System -->
+  <rect x="170" y="220" width="260" height="60" class="node-bg"/>
+  <text x="210" y="242" class="label-sm">03 · NERVOUS SYSTEM</text>
+  <text x="210" y="260" class="label-main">cadence</text>
+  <text x="210" y="274" class="label-sub">typed signal bus · temporal routing</text>
+  <!-- Signal wave icon -->
+  <path d="M 183 252 L 187 244 L 191 260 L 195 244 L 199 252" fill="none" stroke="#6c63ff" stroke-width="1.2" opacity="0.6" stroke-linecap="round"/>
+
+  <!-- Side: External signals -->
+  <line x1="60" y1="250" x2="170" y2="250" stroke="#888" stroke-width="1" stroke-dasharray="3 3" opacity="0.4"/>
+  <text x="62" y="242" class="flow-label">external</text>
+  <text x="62" y="258" class="flow-label">signals</text>
+  <polygon points="170,247 164,250 170,253" fill="#888" opacity="0.4"/>
+
+  <!-- Flow -->
+  <line x1="300" y1="280" x2="300" y2="320" class="flow">
+    <animate attributeName="stroke-dashoffset" from="0" to="-14" dur="2s" repeatCount="indefinite"/>
+  </line>
+  <text x="310" y="305" class="flow-label">dispatches</text>
+
+  <!-- Layer 4: Runtime -->
+  <rect x="170" y="320" width="260" height="60" class="node-bg"/>
+  <text x="210" y="342" class="label-sm">04 · RUNTIME</text>
+  <text x="210" y="360" class="label-main">openclaw + sandbox</text>
+  <text x="210" y="374" class="label-sub">Lima VM isolation · STRIDE model</text>
+  <!-- Shield icon -->
+  <path d="M 184 342 L 191 336 L 198 342 L 198 352 Q 191 358, 184 352 Z" fill="none" stroke="#6c63ff" stroke-width="1.2" opacity="0.6"/>
+
+  <!-- Flow -->
+  <line x1="300" y1="380" x2="300" y2="420" class="flow">
+    <animate attributeName="stroke-dashoffset" from="0" to="-14" dur="2s" repeatCount="indefinite"/>
+  </line>
+  <text x="310" y="405" class="flow-label">state drift</text>
+
+  <!-- Layer 5: Interoception -->
+  <rect x="170" y="420" width="260" height="60" class="node-bg"/>
+  <text x="210" y="442" class="label-sm">05 · INTEROCEPTION</text>
+  <text x="210" y="460" class="label-main">interoception</text>
+  <text x="210" y="474" class="label-sub">coherence monitoring · affect signals</text>
+  <!-- Pulse icon -->
+  <circle cx="191" cy="452" r="9" fill="none" stroke="#6c63ff" stroke-width="1" opacity="0.5">
+    <animate attributeName="r" values="9;10;9" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.3;0.5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="191" cy="452" r="3" fill="#6c63ff" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Feedback loop: Interoception → Learning -->
+  <path d="M 170 450 L 120 450 L 120 150 L 170 150" fill="none" class="feedback">
+    <animate attributeName="stroke-dashoffset" from="0" to="14" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <polygon points="170,146 164,150 170,154" fill="#6c63ff" opacity="0.5"/>
+  <!-- Feedback label -->
+  <text x="90" y="300" font-family="ui-monospace, monospace" font-size="8" fill="#6c63ff" opacity="0.6" text-anchor="middle" transform="rotate(-90, 90, 300)">affect signals ↑ feedback</text>
+</svg>

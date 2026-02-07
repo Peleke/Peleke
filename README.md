@@ -2,65 +2,53 @@
 
 # Peleke Sengstacke
 
-**Writer who codes. Engineer who writes.**
+I study how languages work and build tools from what I find.
 
-*Building AI systems that don't sound like AI.*
-
-[Portfolio](https://peleke.me) · [LinkedIn](https://linkedin.com/in/peleke) · [peleke@pm.me](mailto:peleke@pm.me)
+[Portfolio](https://peleke.me) · [Lab](https://peleke.me/lab) · [LinkedIn](https://linkedin.com/in/peleke) · [peleke@peleke.me](mailto:peleke@peleke.me)
 
 </div>
 
 ---
 
-### The Short Version
+### The Research Question
 
-I've spent a decade teaching people to code and half of one writing about it. Now I build AI systems at the intersection of language, identity, and production reliability.
+Can agents learn from their own performance?
 
-The thesis: Most AI tools make you sound like everyone else. I build the ones that don't.
+Most systems marketed as "learning" are persisting context. Remembering, not adapting. I'm building the instrumentation to tell the difference: a five-layer architecture where learning can be observed and measured.
 
----
+<div align="center">
+<img src="system-diagram.svg" alt="Five-layer agent learning architecture" width="600"/>
+</div>
 
-### What I'm Shipping
-
-**[LinWheel](https://linwheel.ai)** — *Be seen. Be heard. Be elsewhere.*
-
-LinkedIn content tool built by a writer, not just an engineer. Multi-agent orchestration that turns what you're already consuming into posts that sound like *you*. Voice profiles. AI images. Direct publishing. The whole pipeline.
-
-Currently pre-launch. [Demo Jan 14](https://linwheel.ai).
+The [full lab page](https://peleke.me/lab) has the system diagram, hypotheses under investigation, and current project status.
 
 ---
 
-### Other Projects
+### The System
 
-| Project | The Gist |
-|---------|----------|
-| **[Interlinear](https://interlinear.peleke.me)** | AI language tutor that knows the difference between a typo and not understanding the grammar |
-| **[MindMirror](https://swae.peleke.me)** | Personal knowledge engine. RAG without shipping your brain to OpenAI |
-| **[LangLine](https://langline.dev)** | Mobile AI with memory that compounds. Context that doesn't evaporate |
+| Layer | Project | What It Does |
+|-------|---------|-------------|
+| 01 · Knowledge | **[qortex](https://peleke.github.io/qortex/)** | Knowledge graph ingestion with typed edges and rule projection |
+| 02 · Learning | **[buildlog](https://peleke.github.io/buildlog-template/)** / **[openclaw](https://peleke.github.io/openclaw/)** | Thompson Sampling over prompt components to measure what helps |
+| 03 · Nervous System | **[cadence](https://peleke.github.io/cadence/)** | Typed signal bus for ambient agency with temporal routing |
+| 04 · Runtime | **[openclaw](https://peleke.github.io/openclaw/)** + **[sandbox](https://peleke.github.io/openclaw-sandbox/)** | Agent runtime with process-level isolation via Lima VM |
+| 05 · Interoception | **[interoception](https://peleke.github.io/interoception/)** | Internal coherence monitoring via conservation quantity tracking |
+
+---
+
+### Products
+
+| Project | What It Is |
+|---------|-----------|
+| **[Interlinear](https://interlinear.peleke.me)** | Language tutor that distinguishes a typo from a conceptual gap. 5 error types, different interventions. |
+| **[Swae OS](https://swae.peleke.me)** | Health platform with federated backend. GraphQL federation via Hive Gateway. |
+| **[LinWheel](https://linwheel.io)** | Paste a transcript, get 7 publish-ready posts. Including the articles LinkedIn's API blocks. |
+| **[LangLine](https://langline.dev)** | Mobile-first terminal for developers. SSH + tmux on your phone. |
+| **[ComfyUI MCP](https://github.com/peleke/comfyui-mcp)** | 35+ MCP tools bridging Claude to distributed GPU compute. |
+| **[Graphix](https://github.com/peleke/graphix)** | 201 MCP tools exploring the structural primitives of visual storytelling. |
 
 ---
 
 ### Background
 
-**Princeton CS** → **AWS Solutions Architect** → **Principal Engineer @ edX/2U** ($80MM+ ARR platform)
-
-First full-time Curriculum Engineer at **Trilogy Education** (→ $750M exit). Scotch.io top 15 globally. Taught more people to code than I can count.
-
-Currently: **AI Systems Fellow @ Overclock Accelerator** · **Partner @ Endstation LLC**
-
----
-
-### Technical
-
-```
-Retrieval       Hybrid search, chunking, Qdrant, pgvector
-Agents          Multi-agent orchestration, LangGraph, structured outputs, MCP
-Production      FastAPI, Redis, event pipelines, eval harnesses
-Cloud           AWS, GCP, Terraform, Kubernetes
-```
-
----
-
-<p align="center">
-<i>The infrastructure you're going to need—I've already built it.</i>
-</p>
+**Princeton CS** · **Principal Engineer @ edX/2U** · **AI Systems Fellow @ Overclock** · **Partner @ Endstation LLC**
