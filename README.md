@@ -4,7 +4,7 @@
 
 I build secure learning architectures for AI agent systems: infrastructure that lets agents improve from real usage without learning the wrong things.
 
-[Portfolio](https://peleke.me) · [Lab](https://peleke.me/lab) · [Writing](https://peleke.me/writing) · [LinkedIn](https://linkedin.com/in/peleke) · [GitHub](https://github.com/peleke) · [peleke@pm.me](mailto:peleke@pm.me)
+[Portfolio](https://peleke.me) · [Lab](https://peleke.me/lab) · [Writing](https://peleke.me/writing) · [LinkedIn](https://linkedin.com/in/peleke) · [GitHub](https://github.com/peleke) · [peleke.s@pm.me](mailto:peleke.s@pm.me)
 
 </div>
 
@@ -69,4 +69,4 @@ Some of it co-authored with Claude, with author notes on each piece saying who d
 
 ### Background
 
-Principal Engineer @ edX/2U ($60MM+ ARR Cybersecurity Bootcamp sandbox platform, AWS + Azure) · First engineer @ Trilogy ($750M acquisition to 2U) · Agentic AI SME @ Overclock Accelerator · AWS Certified Solutions Architect · Princeton
+Principal Engineer @ edX/2U ($60MM+ ARR Cybersecurity Bootcamp sandbox platform, AWS + Azure) · Lead Architect @ Trilogy, where I started as the first full-time curriculum engineer, through the $750M acquisition to 2U · Agentic AI SME @ Overclock Accelerator · AWS Certified Solutions Architect · Princeton
