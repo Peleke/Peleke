@@ -20,4 +20,4 @@ I took OpenClaw apart, threat-modeled it, and found what I'd thought: A wide-ope
 
 ### Fiat Vox (book, in progress)
 
-- [Fiat Vox](https://peleke.github.io/equivalences/): sound, phonetics, and DSP, working toward animal linguistics. Source: [Peleke/equivalences](https://github.com/Peleke/equivalences).
+- [Fiat Vox](https://peleke.github.io/fiat-vox/): sound, phonetics, and DSP, working toward animal linguistics. Source: [Peleke/fiat-vox](https://github.com/Peleke/fiat-vox).
