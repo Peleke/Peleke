@@ -17,3 +17,7 @@ I took OpenClaw apart, threat-modeled it, and found what I'd thought: A wide-ope
 
 - [Skillipedia](https://github.com/Peleke/skillipedia): browsable index of agent skills ([live](https://skillipedia.vercel.app))
 - [Brunnr](https://github.com/Peleke/brunnr): security scanner and skills marketplace for Claude Code, with a [worked bypass](https://github.com/Peleke/brunnr/tree/main/exploits/glassworm-bypass) showing where scanners fall short.
+
+### Fiat Vox (book, in progress)
+
+- [Fiat Vox](https://peleke.github.io/equivalences/): sound, phonetics, and DSP, working toward animal linguistics. Source: [Peleke/equivalences](https://github.com/Peleke/equivalences).
