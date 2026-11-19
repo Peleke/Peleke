@@ -12,6 +12,10 @@ All the work below was built with Claude's assistance.
 
 - [sia-starter](https://github.com/Peleke/sia-starter): templates for checking whether an agent actually learns (learning-check, signal-card, gold-set). Cold-run agents tested them on six public agent repos before release. MIT.
 
+**Observability**
+
+- [datadog-agent-cites-sources](https://github.com/Peleke/datadog-agent-cites-sources): quickstart for Claude Code with Datadog. The agent's sessions show up as traces in Datadog APM, and every decision in its pull requests links the doc section that justifies it. Runs on Vercel and Supabase.
+
 ### Agent security: Inside the Machine
 
 I took OpenClaw apart, threat-modeled it, and found what I'd thought: A wide-open, utterly unprotected identity layer. Plain-text Markdown the agent loads verbatim into its system prompt is a considerable exposure, but remains a standard "feature" in many agentic harness configurations. [Inside the Machine](https://peleke.me/writing/inside-the-machine) is the four-article record. The same class of problem drew wider attention in October 2026, from [Forever Security](https://forever.security/blog/hijacking-ai-agents-via-downloads-folder/) and the [Cloud Security Alliance](https://labs.cloudsecurityalliance.org/research/csa-research-note-agent-instruction-file-poisoning-20261027/). You'll probably keep seeing it. 
